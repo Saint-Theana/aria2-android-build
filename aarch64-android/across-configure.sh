@@ -12,7 +12,7 @@ HOST=aarch64-linux-android
     --disable-nls \
     --without-gnutls \
     --with-openssl \
-    --without-sqlite3 \9
+    --without-sqlite3 \
     --without-libxml2 \
     --with-libexpat \
     --with-libcares \

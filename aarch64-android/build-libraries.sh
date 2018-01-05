@@ -69,7 +69,7 @@ cd /tmp
   tar zxvf libssh2-1.7.0.tar.gz
   cd libssh2-1.7.0/
   rm -rf $PREFIX/lib/pkgconfig/libssh2.pc
-  PKG_CONFIG_PATH=$PREFIX/lib/pkgconfig/ LD_LIBRARY_PATH=$PREFIX/lib/ CC=$HOST-gcc CXX=$HOST-g++ AR=$HOST-ar RANLIB=$HOST-ranlib CPPFLAGS="-I/opt/NDK/android-ndk-r15c/usr/local/include" LDFLAGS="-L$ANDROID_HOME/usr/local/lib" ./configure --prefix="$ANDROID_HOME/usr/local/" --with-openssl --with-libssl-prefix=$ANDROID_HOME/usr/local/ --host=$HOST
+  PKG_CONFIG_PATH=$PREFIX/lib/pkgconfig/ LD_LIBRARY_PATH=$PREFIX/lib/ CC=$HOST-gcc CXX=$HOST-g++ AR=$HOST-ar RANLIB=$HOST-ranlib CPPFLAGS="-I$ANDROID_HOME/usr/local/include" LDFLAGS="-L$ANDROID_HOME/usr/local/lib" ./configure --prefix="$ANDROID_HOME/usr/local/" --with-openssl --with-libssl-prefix=$ANDROID_HOME/usr/local/ --host=$HOST
   make
   make install
   cd /tmp

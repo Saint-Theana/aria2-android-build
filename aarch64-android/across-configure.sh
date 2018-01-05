@@ -1,5 +1,6 @@
+#!/bin/sh
 if [ -z "$ANDROID_HOME" ]; then
-    echo 'No $ANDROID_HOME specified.'
+    echo 'No  specified.'
     exit 1
 fi
 PREFIX=$ANDROID_HOME/usr/local

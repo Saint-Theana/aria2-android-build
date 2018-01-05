@@ -12,10 +12,6 @@ export ANDROID_HOME=/opt/NDK/android-ndk-r14b
 export PATH=$ANDROID_HOME:$PATH" >> /etc/profile
 source /etc/profile
 
-$NDK/build/tools/make_standalone_toolchain.py \
-   --arch arm64 --api 21 --stl=gnustl \
-   --install-dir $ANDROID_HOME/toolchain
-
 cd $ANDROID_HOME
 
 mkdir usr

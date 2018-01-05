@@ -6,7 +6,7 @@ OPENSSL=http://starry-sky.me/openssl-1.0.2m.tar.gz
 C_ARES=http://starry-sky.me/c-ares-1.13.0.tar.gz
 SSH2=http://starry-sky.me/libssh2-1.7.0.tar.gz
 
-
+apt install pkg-config
 DOWNLOADER="wget -c"
 TOOLCHAIN=$ANDROID_HOME/toolchain
 PATH=$TOOLCHAIN/bin:$PATH

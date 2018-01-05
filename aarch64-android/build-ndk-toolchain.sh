@@ -13,7 +13,7 @@ export PATH=$ANDROID_HOME:$PATH" >> /etc/profile
 source /etc/profile
 
 $NDK/build/tools/make_standalone_toolchain.py \
-   --arch arm64 --api 21 --stl=gnustl \
+   --arch arm64 --api 26 --stl=gnustl \
    --install-dir $ANDROID_HOME/toolchain
 
 cd $ANDROID_HOME

@@ -18,4 +18,10 @@ echo "export NDK=/opt/NDK/android-ndk-r15c
 export ANDROID_HOME=/opt/NDK/android-ndk-r15c
 export PATH=$ANDROID_HOME:$PATH" >> /etc/profile
 source /etc/profile
+
+cd $ANDROID_HOME
+mkdir usr
+mkdir usr/local
+mkdir usr/local/lib
+mkdir usr/local/lib/pkgconfig
 ```

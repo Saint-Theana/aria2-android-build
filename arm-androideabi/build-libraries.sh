@@ -5,7 +5,7 @@ echo "ANDROID_HOME not defined"
 exit 0
 fi
 
-
+apt  install pkg-config
 ##LIBRARIES_DOWNLOAD_URL##
 EXPAT=http://starry-sky.me/expat-2.2.0.tar.bz2
 ZLIB=http://starry-sky.me/zlib-1.2.11.tar.gz

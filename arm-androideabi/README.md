@@ -4,4 +4,4 @@ After libraries build was complete.
 
 
 
-Just use ./android-config and ./android-make will be ok.
+Just use ./android-config and ./android-make would be ok.

@@ -12,12 +12,6 @@ export ANDROID_HOME=/opt/NDK/android-ndk-r14b
 export PATH=$ANDROID_HOME:$PATH" >> /etc/profile
 source /etc/profile
 
-cd $ANDROID_HOME
-
-mkdir usr
-mkdir usr/local
-mkdir usr/local/lib
-mkdir usr/local/lib/pkgconfig
 
 if [[ $ANDROID_HOME == "" ]];then
  echo "ANDROID_HOME not defined"
@@ -27,3 +21,8 @@ if [[ $ANDROID_HOME == "" ]];then
 $ANDROID_HOME/build/tools/make_standalone_toolchain.py \
    --arch arm --api 16 --stl=gnustl \
    --install-dir $ANDROID_HOME/toolchain
+
+
+cd $ANDROID_HOME
+
+mkdir -p usr/local/lib/pkgconfig

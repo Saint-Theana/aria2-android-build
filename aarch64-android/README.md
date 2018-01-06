@@ -18,7 +18,20 @@ target:  aria2-1.33.1/src/a2io.h
 ```
 
 ```shell
-2
+2:
+remove endianness check
+41 #if !defined(LITTLE_ENDIAN) || !defined(BIG_ENDIAN) || !defined(BYTE_ORDER) || \
+42   (LITTLE_ENDIAN != BYTE_ORDER && BIG_ENDIAN != BYTE_ORDER)
+43 #error Unsupported byte order/endianness
+44 #endif
+
+delete code above
+target:  aria2-1.33.1/src/crypto_endian.h
+
+```
+
+```shell
+3
 removefunction gzbuffer 
 65 #if HAVE_GZBUFFER
 66       gzbuffer(fp_, 1 << 17);
